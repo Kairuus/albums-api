@@ -1,0 +1,10 @@
+<header>
+  <button routerLink="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Albums</button>
+</header>
+<h1 class="title">Album {{albumId}} photos</h1>
+<div class="container" >
+  <div class="card" *ngFor="let photo of photos | async">
+    <img src={{photo.url}} >
+  </div>
+
+</div>
